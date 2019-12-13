@@ -24,5 +24,5 @@ if (($1 < 10)) && (($SLURM_ARRAY_TASK_ID == 1)); then
     cd ../exampledir$NEXT_ITER
     
     # Launch next script with next iteration 
-    sbatch testscript.sh $NEXT_ITER
+    sbatch restartingJob.sh $NEXT_ITER
 fi                                                                                      
