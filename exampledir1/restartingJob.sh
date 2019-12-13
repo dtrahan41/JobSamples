@@ -15,7 +15,7 @@ echo "Running some stuff..."
 
 # Check to see if task is head task and if iteration is withing bounds
 # the $1 variable is equal to the first command line arguement provided to the job submission
-if (($1 < 10)) && (($SLURM_ARRAY_TASK_ID == 1)); then
+if (($1 < 4)) && (($SLURM_ARRAY_TASK_ID == 1)); then
     # Set next iteration
     NEXT_ITER=$(($1+1))
     
